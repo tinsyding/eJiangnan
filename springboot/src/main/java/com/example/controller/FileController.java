@@ -45,7 +45,6 @@ public class FileController {
         ServletOutputStream os = response.getOutputStream();
         response.setHeader("Content-Disposition", "attachment;filename=" + URLEncoder.encode(fileName, "UTF-8"));
         response.setContentType("application/octet-stream");
-//        os.write(FileUtil.readBytes(file));
         FileUtil.writeToStream(file, os);
         os.flush();
         os.close();

@@ -10,7 +10,7 @@ import ElementPlus from 'unplugin-element-plus/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    port: 9999, // 启动端口
+    port: 9999, // 前台 启动端口
   },
   plugins: [
     vue(),

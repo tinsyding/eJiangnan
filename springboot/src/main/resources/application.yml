@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8888 # 后台服务端口
 
 # 数据库配置
 spring:
@@ -7,6 +7,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ejiangnanSQL
     password: jndxejiangnan
+#    我创建了一个账户，专门用来（也只能用来)访问ejiangnan数据库
     url: jdbc:mysql://localhost:3306/ejiangnan?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true&allowPublicKeyRetrieval=true
   servlet:
     multipart:
