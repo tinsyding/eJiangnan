@@ -52,7 +52,6 @@
 
 ## 项目结构
 
-    ```bash
     ├─springboot
     │  └─src
     │      └─main
@@ -75,7 +74,6 @@
             ├─router
             ├─utils
             └─web
-    ```
 
 ## 项目运行
 
