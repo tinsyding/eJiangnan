@@ -44,7 +44,8 @@
 
 ## 开发工具
 
-- IntelliJ IDEA (JDK 17)
+- IntelliJ IDEA (JDK 21)
+- WebStorm
 - Navicat 16 (MySQL 8.2.0)
 - postman (Debug)
 - ~~Visual Studio Code~~
