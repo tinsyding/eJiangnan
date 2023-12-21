@@ -4,7 +4,7 @@
 
 ## GITHUB地址
 
-[GITHUB地址](https://github.com/tinsyding/ejiangnan-parody)
+[GITHUB地址](https://github.com/tinsyding/ejiangnan)
 
 ## 功能
 
