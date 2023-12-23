@@ -99,7 +99,7 @@
 
     4. 在admin表中插入一条初始管理员账户
 
-        **请注意：admin表中，role的值应为`ADMIN`**
+        **请注意：admin表中，role的值应为`ADMIN`**  
         **请注意：student表中，role的值应为`STUDENT`**
     
         ```sql
