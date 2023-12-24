@@ -52,28 +52,116 @@
 
 ## 项目结构
 
-    ├─springboot
-    │  └─src
-    │      └─main
-    │          ├─java
-    │          │  └─com
-    │          │      └─example
-    │          │          ├─common
-    │          │          ├─controller
-    │          │          ├─entity
-    │          │          ├─exception
-    │          │          ├─mapper
-    │          │          └─service
-    │          └─resources
-    │              └─mapper
-    └─vue
-        ├─public
-        └─src
-            ├─css
-            ├─images
-            ├─router
-            ├─utils
-            └─web
+    └─eJiangnan
+        │  README.md
+        │
+        ├─springboot
+        │  │  pom.xml
+        │  │
+        │  └─src
+        │      └─main
+        │          ├─java
+        │          │  └─com
+        │          │      └─example
+        │          │          │  SpringbootApplication.java
+        │          │          │
+        │          │          ├─common
+        │          │          │      CorsConfig.java
+        │          │          │      Result.java
+        │          │          │      RoleEnum.java
+        │          │          │
+        │          │          ├─controller
+        │          │          │      CourseController.java
+        │          │          │      DocController.java
+        │          │          │      FileController.java
+        │          │          │      StudentController.java
+        │          │          │      StudentCourseController.java
+        │          │          │      WebController.java
+        │          │          │
+        │          │          ├─entity
+        │          │          │      Account.java
+        │          │          │      Admin.java
+        │          │          │      Course.java
+        │          │          │      Doc.java
+        │          │          │      Student.java
+        │          │          │      StudentCourse.java
+        │          │          │
+        │          │          ├─exception
+        │          │          │      CustomException.java
+        │          │          │      GlobalExceptionHandler.java
+        │          │          │
+        │          │          ├─mapper
+        │          │          │      AdminMapper.java
+        │          │          │      CourseMapper.java
+        │          │          │      DocMapper.java
+        │          │          │      StudentCourseMapper.java
+        │          │          │      StudentMapper.java
+        │          │          │
+        │          │          └─service
+        │          │                  AdminService.java
+        │          │                  CourseService.java
+        │          │                  DocService.java
+        │          │                  StudentCourseService.java
+        │          │                  StudentService.java
+        │          │
+        │          └─resources
+        │              │  application.yml
+        │              │
+        │              └─mapper
+        │                      StudentCourse.xml
+        │
+        └─vue
+            │  .env.development
+            │  .env.production
+            │  index.html
+            │  package.json
+            │  vite.config.js
+            │
+            ├─public
+            │      JiangnanUniversity.ico
+            │
+            └─src
+                │  App.vue
+                │  main.js
+                │
+                ├─css
+                │      global.css
+                │      index.scss
+                │
+                ├─images
+                │      admin.ico
+                │      app.png
+                │      bg0.jpg
+                │      bg1.jpg
+                │      bg2.jpg
+                │      bg3.jpg
+                │      ejiangnan.png
+                │      ewmbtn.png
+                │      logo.ico
+                │      logo.png
+                │      QRcode.jpg
+                │      XiaoYuan.png
+                │
+                ├─router
+                │      index.js
+                │
+                ├─utils
+                │      request.js
+                │
+                └─web
+                        Course.vue
+                        CourseList.vue
+                        Doc.vue
+                        DocStudent.vue
+                        Home.vue
+                        Login.vue
+                        Manager.vue
+                        Person.vue
+                        Register.vue
+                        Reset.vue
+                        Student.vue
+                        StudentCourse.vue
+
 
 ##  项目运行
 
@@ -109,16 +197,16 @@
     
     5. 修改数据库配置
 
-         打开`springboot\src\main\resources\application.yml`，修改数据库配置
+        打开`springboot\src\main\resources\application.yml`，修改数据库配置
 
-         ```yaml
-         spring:
-           datasource:
-             driver-class-name: com.mysql.cj.jdbc.Driver
-             url: jdbc:mysql://localhost:3306/ejiangnan?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-             username: 你的数据库用户名
-             password: 你的数据库密码
-         ```
+        ```yaml
+        spring:
+          datasource:
+            driver-class-name: com.mysql.cj.jdbc.Driver
+            url: jdbc:mysql://localhost:3306/ejiangnan?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+            username: 你的数据库用户名
+            password: 你的数据库密码
+        ```
 
 2. **后端**
 
