@@ -2,11 +2,14 @@
 
 基于springboot和vue3的前后端分离项目
 
+
 ## 项目地址
 
 [GITHUB地址](https://github.com/tinsyding/ejiangnan)
 
+
 ## 功能
+
 
 1. **管理员**
 
@@ -37,10 +40,12 @@
 - vue3
 - Element-ui
 
+
 ## 项目依赖
 
 - Node.js (npm)
 - Apache Maven
+
 
 ## 开发工具
 
@@ -49,6 +54,7 @@
 - Navicat 16 (MySQL 8.2.0)
 - postman (Debug)
 - ~~Visual Studio Code~~
+
 
 ## 项目结构
 
