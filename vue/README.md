@@ -71,7 +71,7 @@
 - **替换镜像源（可选）**
 
     ```bash
-    npm config set registry https://registry.npm.taobao.org
+    npm config set registry https://registry.npmmirror.com
     ```
 
 - **安装依赖（初次运行时需要）**
