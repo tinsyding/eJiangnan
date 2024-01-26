@@ -110,9 +110,9 @@
         spring:
           datasource:
             driver-class-name: com.mysql.cj.jdbc.Driver
-            url: jdbc:mysql://localhost:3306/ejiangnan?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
             username: 你的数据库用户名
             password: 你的数据库密码
+            url: jdbc:mysql://localhost:3306/ejiangnan?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
         ```
 
 2. **后端**
