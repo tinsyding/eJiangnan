@@ -6,8 +6,8 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ejiangnan
-    password:
-#    我创建了一个无密码的名为ejiangnan账户，专门用来（也只能用来)访问ejiangnan数据库
+    password: ejiangnan
+#    我创建了一个账密同为ejiangnan的mysql账户，专门用来（也只能用来)访问ejiangnan数据库
     url: jdbc:mysql://localhost:3306/ejiangnan?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=GMT%2b8&allowPublicKeyRetrieval=true&allowPublicKeyRetrieval=true
   servlet:
     multipart:
