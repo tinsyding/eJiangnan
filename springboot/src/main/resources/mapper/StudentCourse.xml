@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.StudentCourseMapper">
+
+    <select id="selectAll" resultType="com.example.entity.StudentCourse">
+        SELECT
+        student_course.*,
+        student.name AS studentName
+        FROM
+        student_course
+        LEFT JOIN student ON student_course.student_id = student.id
+        <where>
+
+            <if test="name != null">
+                AND student_course.name LIKE CONCAT('%', #{name}, '%')
+            </if>
+
+            <if test="no != null">
+                AND student_course.no LIKE CONCAT('%', #{no}, '%')
+            </if>
+
+            <if test="studentId != null">
+                AND student_course.student_id = #{studentId}
+            </if>
+
+        </where>
+        ORDER BY id DESC
+    </select>
+
+</mapper>
